@@ -1,0 +1,25 @@
+﻿@page
+@model WebAppRazorPagesTechCrew.Pages.SubModel
+@{
+}
+
+<form method="post">
+    <table border="1">
+        <tr>
+            <td>Enter X value:</td>
+            <td><input type="number" name="num1" /></td>
+        </tr>
+        <tr>
+            <td>Enter Y value:</td>
+            <td><input type="number" name="num2" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="submit" /></td>
+            <td><input type="reset" value="reset" /></td>
+        </tr>
+    </table>
+
+    <p>
+        Sub result is:@TempData["res"]
+    </p>
+</form>

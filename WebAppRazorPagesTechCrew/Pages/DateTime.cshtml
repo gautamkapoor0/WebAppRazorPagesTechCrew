@@ -1,0 +1,19 @@
+﻿@page
+@model WebAppRazorPagesTechCrew.Pages.DateTimeModel
+@{
+}
+
+
+@* Here we can have both C sharp and HTML & css *@
+
+
+<p>I wany to display date and Time as soon as page loads</p>
+
+<p>@TempData["CurrentDateTime"]</p>
+<p>
+    @TempData["time"]
+</p>
+
+<form method="post">
+    <input type="submit" value="Get date time on click" />
+</form>
