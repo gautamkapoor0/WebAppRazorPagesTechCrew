@@ -11,7 +11,7 @@ namespace WebAppRazorPagesTechCrew.Pages
 
         public void OnPost()
         {
-            int x =Convert.ToInt32( Request.Form["num1"].ToString());
+            int x = Convert.ToInt32(Request.Form["num1"].ToString());
 
             int y = Convert.ToInt32(Request.Form["num2"].ToString());
 

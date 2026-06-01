@@ -1,0 +1,103 @@
+﻿@page
+@model WebAppRazorPagesTechCrew.Pages.MyDataModel
+@{
+}
+
+
+<div class="container">
+
+    <h2>Registration Form</h2>
+
+    <form method="post">
+
+        <div class="row">
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter Name" asp-for="_mydata.UserName">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" asp-for="_mydata.Email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" asp-for="_mydata.Password">
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" asp-for="_mydata.ConfirmPassword">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="gender">
+                    <input type="radio" name="gender" asp-for="_mydata.Gender" value="Male"> Male
+                    <input type="radio" name="gender" asp-for="_mydata.Gender" value="Female"> Female
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Department</label>
+                <select asp-for="_mydata.Dept">
+                    <option>Select Department</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>Mechanical</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Age</label>
+                <input type="number" asp-for="_mydata.Age">
+            </div>
+
+            <div class="input-group">
+                <label>Date of Birth</label>
+                <input type="date" asp-for="_mydata.Dob">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Father Name</label>
+                <input type="text" asp-for="_mydata.FatherName">
+            </div>
+
+            <div class="input-group">
+                <label>Qualification</label>
+                <select asp-for="_mydata.Qualification">
+                    <option>Select Qualification</option>
+                    <option>SSC</option>
+                    <option>Inter</option>
+                    <option>Degree</option>
+                    <option>B.Tech</option>
+                    <option>M.Tech</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Address</label>
+            <textarea rows="4" asp-for="_mydata.Address"></textarea>
+        </div>
+
+   
+
+
+        <input type="submit" value="register" />
+
+
+    </form>
+
+</div>
+
